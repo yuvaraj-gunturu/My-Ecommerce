@@ -1,5 +1,6 @@
 import React from 'react'
 import {Routes, Route  } from 'react-router-dom'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Collection from './pages/Collection'
 import About from './pages/About'
@@ -9,7 +10,7 @@ import Login from './pages/Login'
 import Orders from './pages/Orders'
 import Product from './pages/Product'
 import Placeorder from './pages/Placeorder'
-import Navbar from './components/Navbar'
+
 
 
 
