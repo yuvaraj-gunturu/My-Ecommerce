@@ -4,7 +4,7 @@ import {assets} from '../assets/assets.js'
 
 const Shopnow = () => {
   return (
-    <div className='flex flex-col sm:flex-row justify-center border border-gray-300 m-[20px]'>
+    <div className='flex flex-col md:flex-row justify-center border border-gray-300 lg:m-[20px]'>
         <div className='text-[#414141] flex justify-center flex-col'>
             <div className='flex text-center  p-2'>
                 <p className='w-8 md:w-11 bg-[#414141] h-[4px] rounded m-2'></p>

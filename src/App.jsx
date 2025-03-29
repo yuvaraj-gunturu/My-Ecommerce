@@ -10,6 +10,8 @@ import Login from './pages/Login'
 import Orders from './pages/Orders'
 import Product from './pages/Product'
 import Placeorder from './pages/Placeorder'
+import Footer from './components/Footer'
+import SearchBar from './components/searchBar'
 
 
 
@@ -20,6 +22,7 @@ const App = () => {
       
       <div>
       <Navbar/>
+      <SearchBar />
         <Routes>
           <Route path = "/"  element = {<Home/>} />
           <Route path = "/collection" element = {<Collection/>} />
@@ -31,6 +34,7 @@ const App = () => {
           <Route path = "/product/:productid" element = {<Product/> } />
           <Route path = "/place-order" element = {<Placeorder/> } />
         </Routes>
+        <Footer />
       </div>
     </>
   )

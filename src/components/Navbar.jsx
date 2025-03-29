@@ -7,8 +7,10 @@ const Navbar = () => {
       const [visible, setVisible] = React.useState(false);
 
   return (
-   <div className='flex items-center justify-between py-5 font-medium m-3'>
+   <div className='flex items-center justify-between py-5 font-medium mx-20'>
+     <Link to={"/"}>
      <img src={assets.logo} alt="logo" className='w-30 border-rounded'/>
+     </Link>
      {/* <p className='w-1vw h-20'>LOGO</p> */}
 
      <ul className='hidden sm:flex text-sm '>
@@ -85,6 +87,7 @@ const Navbar = () => {
 
 
      </div>
+     
      
     
 
