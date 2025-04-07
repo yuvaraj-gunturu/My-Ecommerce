@@ -88,7 +88,7 @@ const Navbar = () => {
       >
         <div
           onClick={() => setVisible(false)}
-          className="flex flex-col text-gray-600 cursor-pointer sm:hidden"
+          className="flex flex-col text-gray-600 cursor-pointer hidden"
         >
           <div className="flex text-center gap-4 p-3">
             <img src={assets.dropdown_icon} alt="" className="h-4 rotate-180" />
