@@ -6,5 +6,6 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-})
+  base : import.meta.env.VITE_BASE_PATH || "/My-Ecommerce"
+});
 
