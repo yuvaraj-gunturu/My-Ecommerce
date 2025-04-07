@@ -7,7 +7,7 @@ import ProductItems from '../components/ProductItems';
 
 const Collection = () => {
     
-const {products} = useContext(Shopcontext);
+const {products, search, showSearch} = useContext(Shopcontext);
 
 
 
@@ -43,6 +43,10 @@ const toogleSubCategory = (e) => {
 
 const applyFilter = () => {
     let productsCopy = products.slice();
+
+    if(showSearch && search) {
+        productsCopy = productsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
+    }
     
     if(category.length > 0) {
         productsCopy = productsCopy.filter(item => category.includes(item.category));
@@ -80,7 +84,7 @@ const sortProducts = () => {
 useEffect(( ) => {
    applyFilter();
 
-},[category, subCategory])
+},[category, subCategory,search, showSearch])
 
 useEffect(() => { 
     sortProducts();
@@ -91,7 +95,7 @@ useEffect(() => {
 
  
 return (
-    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10  mx-20 my-15'>
+    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10  my-15'>
        <div className='min-w-60'>
             <p onClick={() => setShowFilters(!showFilters)} className='my-2 text-xl flex items-center cursor-pointer gap-2'>Filters
             <img className={`h-3 sm:hidden ${showFilters ? 'rotate-90' : ''}`} src={assets.dropdown_icon} alt="" />

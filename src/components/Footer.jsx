@@ -4,7 +4,7 @@ import {assets} from '../assets/assets.js'
 const Footer = () => {
   return (
     <div>
-      <div className='flex flex-col sm:grid grid-cols-[2fr_1fr_1fr] gap-14 mx-20 text-sm'>
+      <div className='flex flex-col sm:grid grid-cols-[2fr_1fr_1fr] gap-14  text-sm  mt-20'>
         <div>
         <img src=  {assets.logo} className='mb-5 w-32' alt="" />
         <p className='w-full md:w-2/3 text-gray-600 '>Description should be added here</p>
@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
       <div >
         <hr className='mx-20 my-5 border-gray-400'/>
-        <p className='py-5 text-sm text-center'>CopyRights2024@MY-Ecommerce.com - All Rights Reserved.</p>
+        <p className='py-5 text-sm text-center'>DummyCopyRights2025@MY-Ecommerce.com - All Rights Reserved.</p>
       </div>
       
     </div>
